@@ -1,0 +1,270 @@
+html, body {
+    background-color: #FFF2CC;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    justify-items: center;
+}
+
+.cont {
+    background-color: #FFF2CC;
+    position: relative;
+    height: 748px;
+    width: 420px;
+    border-left: 10px solid;
+    border-right: 10px solid;
+    border-color: #DFA67B;
+} 
+.estampado {
+    background-image: url(imgs/estampado.png);
+    position: absolute;
+    height: 748px;
+    width: 420px;
+}
+.bloqueSup, .bloqueInf {
+    background-color: #DFA67B;
+    position: absolute;
+    width: 420px;
+    height: 30px;
+}
+.bloqueSup {
+    top: 1%;
+}
+.bloqueInf {
+    bottom: 1%;
+}
+
+.marcoFotos, .fotos, .aviso {
+    border-radius: 5%;
+}
+.mensaje1, .mensaje2, .mensaje3{
+    border-radius: 3%;
+}
+.cosas {
+    position: absolute;
+    height: 748px;
+    width: 420px;
+}
+.mensaje1 {
+    background-color: #DFA67B;
+    font-family: "Delius Swash Caps", cursive;
+    align-content: center;
+    text-align: center;
+    color: #FFD966;
+    position: absolute;
+    font-size: 20px;
+    height: auto;
+    width: 150px;
+    top: 8.5%;
+    left: 19px;
+}
+.mensaje2 {
+    background-color: #DFA67B;
+    font-family: "Delius Swash Caps", cursive;
+    align-content: center;
+    text-align: center;
+    color: #FFD966;
+    font-size: 15px;
+    position: absolute;
+    height: auto;
+    width: 160px;
+    top: 20%;
+    left: 14px;
+}
+.mensaje3 {
+    background-color: #DFA67B;
+    font-family: "Delius Swash Caps", cursive;
+    align-content: center;
+    text-align: center;
+    color: #FFD966;
+    font-size: 15px;
+    position: absolute;
+    height: auto;
+    width: 200px;
+    top: 40%;
+    right: 7.5%;
+}
+.snoopy {
+    background-image: url(imgs/snoopy.png);
+    background-size: 100%;
+    position: absolute;
+    height: 200px;
+    width: 150px;
+    bottom: 20%;
+    left: 19px;
+}
+.marcoFotos {
+    background-color: #DFA67B;
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    right: 7.5%;
+    top: 10%;
+}
+.aviso {
+    background-color: #DFA67B;
+    font-family: "Delius Swash Caps", cursive;
+    align-content: center;
+    text-align: center;
+    color: #FFD966;
+    position: absolute;
+    height: auto;
+    width: 170px;
+    bottom: -10px;
+    left: 15px;
+}
+.fotos {
+    background-image: url(imgs/mono.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 180px;
+    width: 180px;
+    top: 10px;
+    left: 10px;
+}
+.arbol {
+    background-image: url(imgs/arbol.png);}
+.flor {
+    background-image: url(imgs/flor.png);}
+.lap {
+    background-image: url(imgs/lap.png);}
+.payaso {
+    background-image: url(imgs/payaso.png);}
+.perro {
+    background-image: url(imgs/perro.png);}
+.tard {
+    background-image: url(imgs/tard.png);}
+.zana {
+    background-image: url(imgs/zana.png);}
+
+@keyframes introGato {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    75% {
+        transform: rotate(360deg) scale(1);
+    }
+    80% {
+        transform: rotate(396deg) scale(1.1);
+    }
+    100% {
+        transform: rotate(540deg) scale(0);
+    }
+}
+@keyframes introIntro {
+    0% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+@keyframes gatoScale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes arrib {
+    0% {
+        transform: translate(0,0);
+    }
+    50% {
+        transform: translate(0,2px);
+    }
+    100% {
+        transform: translate(0,0);
+    }
+}
+.desapMarco {
+    animation: introGato 3s;
+    animation-timing-function: linear;
+}
+.desapFondo {
+    animation: introIntro 1.5s;
+    animation-timing-function: linear;
+}
+.desap {
+    display: none !important;
+}
+.intro {
+    position: absolute;
+    height: 748px;
+    width: 420px;
+    display: flex; 
+}
+.fondoIntro {
+    background-color: #FFF2CC;
+    position: absolute;
+    height: 748px;
+    width: 420px;
+    align-content: center;
+    justify-items: center;
+}
+.estampadoIntro {
+    background-image: url(imgs/estampadoIntro.png);
+    position: absolute;
+    height: 748px;
+    width: 420px;
+    top: 0px;
+    left: 0px;
+    animation: arrib 3s infinite;
+    animation-timing-function: linear;
+}
+.marcoGato {
+    background-color: #DFA67B;
+    align-content: center;
+    justify-items: center;
+    position: relative;
+    height: 185px;
+    width: 185px;
+}
+.gato {
+    background-image: url(imgs/gatofeliz.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 165px;
+    width: 165px;
+}
+.botonGato {
+    position: relative;
+    height: 185px;
+    width: 185px;
+    top: -10px;
+    left: -10px;
+}
+.gatoGrande {
+    animation: gatoScale 0.3s;
+    animation-timing-function: linear;
+}
+.fc {
+    background-color: #DFA67B;
+    font-family: "Delius Swash Caps", cursive;
+    align-content: center;
+    text-align: center;
+    position: absolute;
+    color: #FFD966;
+    height: auto;
+    width: 250px;
+    top: 120px;
+    left: 85px;
+    clip-path: polygon(
+        10% 15%,
+        90% 15%,
+        90% 50%,
+        75% 50%,
+        75% 85%,
+        25% 85%,
+        25% 50%,
+        10% 50%);
+    animation: arrib 1.5s infinite;
+    animation-timing-function: linear;
+}
