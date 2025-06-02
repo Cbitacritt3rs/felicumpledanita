@@ -1,6 +1,6 @@
+const best = document.getElementById('bestFriend')
 function inicioGato() {
     const pop = document.getElementById('pop')
-    const best = document.getElementById('bestFriend')
     pop.play()
     best.play()
     document.getElementsByClassName('marcoGato')[0].classList.add('gatoGrande')
@@ -16,6 +16,9 @@ function inicioGato() {
         }, 2950);
     }, 550);
 }
+best.addEventListener('ended', () => {
+    best.play()
+})
 
 let mariconf = null
 
