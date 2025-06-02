@@ -11,7 +11,7 @@ html, body {
     background-color: #FFF2CC;
     position: relative;
     height: 748px;
-    width: 420px;
+    width: 100%;
     border-left: 10px solid;
     border-right: 10px solid;
     border-color: #DFA67B;
